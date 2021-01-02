@@ -15,7 +15,7 @@ const app = express();
 
 mongoose.connect('mongodb://localhost/sagSTAFF')
 .then(()=>console.log(`Connected To to database`))
-.catch(err=>console.error('Could not connect', err));
+.catch(err=>console.error('Could not connect', err))
 
 
 app.use(helmet());
